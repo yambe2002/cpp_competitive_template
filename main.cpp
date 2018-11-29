@@ -1,27 +1,73 @@
-#include <iostream>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <algorithm>
-#include <string>
-#include <sstream>
-#include <complex>
-#include <vector>
-#include <list>
-#include <queue>
-#include <deque>
-#include <stack>
-#include <map>
-#include <set>
+#include <bits/stdc++.h>
 using namespace std;
-typedef long long unsigned int ll;
 
-#define EPS (1e-7)
-#define INF (1e9)
-#define PI (acos(-1))
+// #define int long long
+struct Fast {Fast(){std::cin.tie(0);ios::sync_with_stdio(false);}} fast;
 
-int main() {
-cout << "3" << endl;
+#define _overload3(_1,_2,_3,name,...) name
+#define _rep(i,n) repi(i,0,n)
+#define repi(i,a,b) for(int i=int(a);i<int(b);++i)
+#define rep(...) _overload3(__VA_ARGS__,repi,_rep,)(__VA_ARGS__)
+
+#define all(x) (x).begin(),(x).end()
+
+typedef long long ll;
+typedef unsigned long long ull;
+typedef vector<int> vi;
+typedef vector<vi> vvi;
+typedef vector<vvi> vvvi;
+typedef pair<int, int> pii;
+typedef double D;
+typedef complex<D> P;
+typedef vector<string> vs;
+
+#define SZ(x) ((int)(x).size())
+
+#define fill(x,y) memset(x,y,sizeof(x))
+
+// with compile option -DLOCAL
+#ifdef LOCAL
+    #define eprintf(...) fprintf(stderr, __VA_ARGS__)
+#else
+    #define eprintf(...) 42
+#endif
+
+template<class T>bool chmax(T &a, const T &b) { if (a<b) { a=b; return 1; } return 0; }
+template<class T>bool chmin(T &a, const T &b) { if (b<a) { a=b; return 1; } return 0; }
+
+#define pcnt __builtin_popcount
+#define pcntll __builtin_popcountll
+
+#define pb push_back
+#define mp make_pair
+#define eb emplace_back
+#define ALL(v) begin(v), end(v)
+#define RALL(v) rbegin(v), rend(v)
+#define F first
+#define S second
+
+#define y0 y3487465
+#define y1 y8687969
+#define j0 j1347829
+#define j1 j234892
+#define next asdnext
+#define prev asdprev
+
+inline bool inside(int y, int x, int H, int W) {return y >= 0 && x >= 0 && y < H && x < W;}
+
+int qp(int a,ll b){int ans=1;do{if(b&1)ans=1ll*ans*a;a=1ll*a*a;}while(b>>=1);return ans;}
+int qp(int a,ll b,int mo){int ans=1;do{if(b&1)ans=1ll*ans*a%mo;a=1ll*a*a%mo;}while(b>>=1);return ans;}
+int gcd(int a,int b){return b?gcd(b,a%b):a;}
+int dx[4]={1,0,-1,0};
+int dy[4]={0,1,0,-1};
+
+
+
+#define UNIQUE(v) v.erase( unique(v.begin(), v.end()), v.end() );
+
+const int MOD = 1e9 + 7;
+
+signed main() {
     return 0;
 }
 
